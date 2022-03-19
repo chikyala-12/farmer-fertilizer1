@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>farmer fatilizer</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="pics/logo.jpg" width="125px"></a>
+
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="Account.html">Account</a></li>
+                    </ul>
+
+
+                </nav>
+                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Give Your workout<br> A New Style</h1>
+                    <p> Success isn't always about greatness.It's about consistency.consistent <br>hard work gains success.Greatness willcome</p>
+                    <a href=" " class="btn">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="pics/2.jpg" width="500px">
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <section class="contant-us">
+
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span> 
+                     <h5>NIZAMABAD Road, manikbandar</h5>
+                     <p>Nizamabad,Telangana , India</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span> 
+                         <h5>+19 9878675645</h5>
+                         <p>Monday to saturday, 10AM to 6PM</p>
+                        </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <span> 
+                         <h5>web.developer@women.com</h5>
+                         <p>Email us for any query</p>
+                       </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="Email" name="email" placeholder="Enter your email" required>
+                    <input type="text" name="subject" placeholder="Enter your subject" required>
+                    <textarea rows="8" name="message" placeholder="message"></textarea>
+                    <button type="submit" class="red-btn">send message</button>
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+    <!---------------footer--------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+
+                </div>
+                <div class="footer-col-2">
+                    <img src="pics/logo.jpg">
+                    <p>Our purpose is to Sustainbly Make the pleasure and Benefits of fatilizers Accessible to the Many.
+
+                    </p>
+
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+
+                </div>
+            </div>
+            <hr>
+            <p class="copyright"> copyright 2022 - Web Developer</p>
+        </div>
+
+    </div>
+    <!------------js for toggle menu--------------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle()
+
+        {
+            if (MenuItems.style.maxHeight == "0px")
+
+            {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
